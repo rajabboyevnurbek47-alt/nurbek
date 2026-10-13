@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b18">
+  <meta name="description" content="Koinotning eng hayratlanarli kashfiyotlari, astrofizika faktlari va kosmik sirlarini o‘zbek tilida kashf eting.">
+  <meta property="og:title" content="ASTROVERSE — Koinot sari sayohat">
+  <meta property="og:description" content="Astrofizika, kosmik sirlar va inson aqlini hayratga soladigan ilmiy faktlar.">
+  <meta property="og:type" content="website">
+  <title>ASTROVERSE — Koinot sari sayohat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="indexl.css">
+</head>
+<body>
+  <div class="page-glow page-glow-one" aria-hidden="true"></div>
+  <div class="page-glow page-glow-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#bosh-sahifa" aria-label="Astroverse bosh sahifasi">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>ASTRO<span class="brand-light">VERSE</span></span>
+    </a>
+    <button class="mobile-menu-button" id="mobile-menu-button" aria-label="Menyuni ochish" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Asosiy navigatsiya">
+      <a class="nav-link active" href="#bosh-sahifa">Bosh sahifa</a>
+      <a class="nav-link" href="#kashfiyotlar">Kashfiyotlar</a>
+      <a class="nav-link" href="#kategoriyalar">Mavzular</a>
+      <a class="nav-link" href="#koinot-safari">Koinot safari</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="theme-toggle" aria-label="Yorug‘ mavzuni yoqish" title="Mavzuni almashtirish">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36-6.36-1.42 1.42M7.05 16.95l-1.41 1.41m12.72 0-1.41-1.41M7.05 7.05 5.64 5.64M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg>
+      </button>
+      <button class="admin-trigger" id="admin-trigger"><span aria-hidden="true">✳</span> Boshqaruv</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="bosh-sahifa">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> KOINOT CHEGARASIZ, QIZIQISHINGIZ HAM SHUNDAY</div>
+        <h1>Koinot — biz<br>bilganimizdan ham <span class="gradient-text">sirliroq.</span></h1>
+        <p class="hero-description">Astrofizika, kosmik sirlar va inson aqlini hayratga soladigan ilmiy faktlar. Koinotga yangicha nigoh bilan qarang.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#kashfiyotlar">Kashf qilish <span aria-hidden="true">↗</span></a>
+          <button class="button button-ghost" id="random-hero"><span class="dice" aria-hidden="true">⚄</span> Tasodifiy fakt</button>
+        </div>
+        <div class="hero-stats" aria-label="Sayt statistikasi">
+          <div><strong id="stat-facts">30+</strong><span>ilmiy fakt</span></div>
+          <div><strong>7</strong><span>koinot mavzusi</span></div>
+          <div class="stat-live"><span class="live-dot"></span><span>Cheksiz kashfiyotlar</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="planet planet-main"></div><div class="planet planet-small"></div>
+        <div class="hero-caption"><span class="caption-line"></span><span><strong>Cheksiz olam</strong><small>Har yulduz — yangi bir hikoya</small></span></div>
+        <div class="floating-coordinate">J2000 · RA 00h 42m · DEC +41°</div>
+      </div>
+      <a class="scroll-cue" href="#bugungi-fakt"><span></span> PASTGA AYLANING</a>
+    </section>
+
+    <section class="daily-section section-wrap" id="bugungi-fakt">
+      <div class="daily-label"><span class="sparkle">✦</span><span>BUGUNGI KOSMIK FAKT</span><span class="daily-date" id="daily-date"></span></div>
+      <div class="daily-content" id="daily-content"></div>
+      <button class="daily-refresh" id="random-daily" aria-label="Yangi tasodifiy fakt" title="Yangi tasodifiy fakt">↻</button>
+    </section>
+
+    <section class="discover-section section-wrap" id="kashfiyotlar">
+      <div class="section-heading">
+        <div><div class="eyebrow section-eyebrow">KOINOTDAN YANGILIKLAR</div><h2>Qiziqish <span class="gradient-text">ufqidan narida.</span></h2></div>
+        <a class="text-link" href="#faktlar">Barcha faktlar <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="feature-grid" id="feature-grid"></div>
+    </section>
+
+    <section class="category-section section-wrap" id="kategoriyalar">
+      <div class="section-heading">
+        <div><div class="eyebrow section-eyebrow">KOINOTNI O‘RGANING</div><h2>Olamlar <span class="gradient-text">olamiga xush kelibsiz.</span></h2></div>
+      </div>
+      <div class="category-grid" id="category-grid"></div>
+    </section>
+
+    <section class="facts-section section-wrap" id="faktlar">
+      <div class="section-heading facts-heading">
+        <div><div class="eyebrow section-eyebrow">BILIMLAR GALAKTIKASI</div><h2>Koinot haqida <span class="gradient-text">bilasizmi?</span></h2></div>
+        <span class="results-count" id="results-count"></span>
+      </div>
+      <div class="search-tools">
+        <label class="search-box" for="fact-search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+          <input id="fact-search" type="search" placeholder="Koinotdan izlang..." autocomplete="off">
+          <kbd>⌘ K</kbd>
+        </label>
+        <div class="filter-row" id="filter-row" aria-label="Faktlarni kategoriya bo‘yicha saralash"></div>
+      </div>
+      <div class="facts-grid" id="facts-grid"></div>
+      <div class="empty-state" id="empty-state" hidden><span>✧</span><h3>Bu yerdan hali signal yo‘q</h3><p>Boshqa so‘z yoki mavzuni izlab ko‘ring.</p><button class="button button-ghost" id="clear-filters">Filtrlarni tozalash</button></div>
+    </section>
+
+    <section class="explorer-section section-wrap" id="koinot-safari">
+      <div class="section-heading">
+        <div><div class="eyebrow section-eyebrow">INTERAKTIV TAJRIBA</div><h2>Bizning <span class="gradient-text">kosmik manzilimiz.</span></h2></div>
+        <p class="heading-note">Quyosh sistemasini kezib chiqing — har bir olamning o‘z hikoyasi bor.</p>
+      </div>
+      <div class="explorer-panel">
+        <div class="solar-map" id="solar-map" aria-label="Interaktiv Quyosh sistemasi"></div>
+        <div class="planet-info" id="planet-info"></div>
+        <div class="planet-picker" id="planet-picker" aria-label="Sayyorani tanlang"></div>
+      </div>
+      <div class="distance-panel">
+        <div class="distance-title"><div><div class="eyebrow section-eyebrow">KOSMIK MASOFA SHKALASI</div><h3>Qancha uzoqqa bora olasiz?</h3></div><span class="distance-value" id="distance-value"></span></div>
+        <input type="range" id="distance-range" min="0" max="7" value="0" aria-label="Kosmik masofa bosqichini tanlang">
+        <div class="distance-stops" id="distance-stops"></div>
+        <p class="distance-description" id="distance-description"></p>
+      </div>
+    </section>
+
+    <section class="timeline-section section-wrap" id="kashfiyotlar-tarixi">
+      <div class="section-heading">
+        <div><div class="eyebrow section-eyebrow">BILIMLAR TARIXI</div><h2>Koinotni anglash <span class="gradient-text">vaqt chizig‘i.</span></h2></div>
+        <p class="heading-note">Osmon haqidagi tasavvurimizni o‘zgartirgan muhim lahzalar.</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="brand footer-brand" href="#bosh-sahifa"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>ASTRO<span class="brand-light">VERSE</span></span></a>
+    <p>Koinotni anglash — o‘zimizni anglash sari sayohat.</p>
+    <span class="footer-credit">Ilm bilan, yulduzlar sari <span aria-hidden="true">✦</span></span>
+  </footer>
+
+  <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="detail-title"></dialog>
+  <dialog class="admin-dialog" id="admin-dialog" aria-labelledby="admin-title"></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="indexll.js" defer></script>
+</body>
+</html>
