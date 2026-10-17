@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | GAME SHOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><span class="brand-mark">G</span><span>GAME SHOP</span></a>
+      <nav class="main-nav"><a href="index.html">Home</a><a href="catalog.html">Catalog</a><a href="wishlist.html">Wishlist</a><a href="cart.html">Cart</a></nav>
+      <div class="nav-actions"><a class="nav-link" href="index.html">Logout</a></div>
+    </div>
+  </header>
+
+  <main class="page-shell profile-page">
+    <div class="container profile-grid">
+      <aside class="profile-sidebar auth-card">
+        <div class="profile-avatar">JD</div>
+        <h2 id="profile-name">John Doe</h2>
+        <p id="profile-email">john@example.com</p>
+        <button class="btn btn-secondary full-width" id="logout-btn">Logout</button>
+      </aside>
+      <section class="profile-main">
+        <div class="auth-card">
+          <h3>Edit profile</h3>
+          <form id="profile-form">
+            <div class="field-row two-col">
+              <div class="field-group"><label>Name</label><input type="text" id="edit-name" /></div>
+              <div class="field-group"><label>Email</label><input type="email" id="edit-email" /></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Save changes</button>
+          </form>
+        </div>
+        <div class="auth-card">
+          <h3>Order history</h3>
+          <div id="order-history" class="order-list"></div>
+        </div>
+        <div class="auth-card">
+          <h3>Favorite games</h3>
+          <div id="favorite-list" class="favorite-list"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

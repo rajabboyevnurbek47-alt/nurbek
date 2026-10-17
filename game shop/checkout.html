@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | GAME SHOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><span class="brand-mark">G</span><span>GAME SHOP</span></a>
+      <nav class="main-nav"><a href="index.html">Home</a><a href="catalog.html">Catalog</a><a href="cart.html" class="active">Cart</a></nav>
+    </div>
+  </header>
+
+  <main class="auth-shell page-shell">
+    <div class="container checkout-wrap">
+      <div class="auth-card">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+          <div class="field-row two-col">
+            <div class="field-group"><label>Full name</label><input type="text" required /></div>
+            <div class="field-group"><label>Email</label><input type="email" required /></div>
+          </div>
+          <div class="field-group"><label>Address</label><input type="text" required /></div>
+          <div class="field-row two-col">
+            <div class="field-group"><label>City</label><input type="text" required /></div>
+            <div class="field-group"><label>Zip code</label><input type="text" required /></div>
+          </div>
+          <div class="field-group"><label>Payment method</label><select><option>Visa</option><option>Mastercard</option><option>PayPal</option><option>Crypto</option></select></div>
+          <button class="btn btn-primary full-width" type="submit">Place order</button>
+        </form>
+      </div>
+      <aside class="auth-card">
+        <h3>Order review</h3>
+        <div id="checkout-items"></div>
+        <div class="summary-row total"><span>Total</span><strong id="checkout-total">$0.00</strong></div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seller Orders | GAME SHOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/seller.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body class="seller-layout">
+  <aside class="seller-sidebar">
+    <div class="brand-box"><a href="index.html" class="brand"><span class="brand-mark">G</span><span>GAME SHOP</span></a></div>
+    <nav>
+      <a href="seller-dashboard.html">Dashboard</a>
+      <a href="seller-products.html">Products</a>
+      <a href="seller-add-product.html">Add product</a>
+      <a href="seller-orders.html" class="active">Orders</a>
+      <a href="index.html">Exit</a>
+    </nav>
+  </aside>
+  <main class="seller-main">
+    <div class="seller-topbar"><h1>Orders</h1></div>
+    <div class="table-panel">
+      <table>
+        <thead><tr><th>Order ID</th><th>Customer</th><th>Game</th><th>Status</th><th>Total</th></tr></thead>
+        <tbody>
+          <tr><td>#1023</td><td>Anna N.</td><td>Cyberpunk 2077</td><td>Paid</td><td>$19.99</td></tr>
+          <tr><td>#1024</td><td>Sam K.</td><td>Forza Horizon 5</td><td>Processing</td><td>$29.99</td></tr>
+          <tr><td>#1025</td><td>Mark P.</td><td>EA SPORTS FC 25</td><td>Shipped</td><td>$59.99</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="js/storage.js"></script>
+  <script src="js/seller.js"></script>
+</body>
+</html>

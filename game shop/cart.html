@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | GAME SHOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><span class="brand-mark">G</span><span>GAME SHOP</span></a>
+      <nav class="main-nav"><a href="index.html">Home</a><a href="catalog.html">Catalog</a><a href="wishlist.html">Wishlist</a><a href="cart.html" class="active">Cart</a></nav>
+      <div class="nav-actions"><a class="nav-link" href="login.html">Login</a><a class="btn btn-primary btn-small" href="register.html">Register</a></div>
+    </div>
+  </header>
+
+  <main class="page-shell cart-page">
+    <div class="container cart-layout">
+      <section class="cart-items-section">
+        <div class="section-header"><div><span class="section-label">YOUR CART</span><h1>Shopping cart</h1></div></div>
+        <div id="cart-items"></div>
+      </section>
+      <aside class="cart-summary">
+        <h3>Order summary</h3>
+        <div class="summary-row"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+        <div class="summary-row"><span>Discount</span><strong id="discount">-$0.00</strong></div>
+        <div class="summary-row total"><span>Total</span><strong id="total">$0.00</strong></div>
+        <div class="coupon-box"><input type="text" id="coupon-input" placeholder="Coupon code" /><button class="btn btn-secondary btn-small" id="apply-coupon">Apply</button></div>
+        <a href="checkout.html" class="btn btn-primary full-width">Proceed to checkout</a>
+        <button class="btn btn-secondary full-width" id="clear-cart">Clear cart</button>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-bottom"><div class="container"><span>© <span id="year"></span> GAME SHOP</span></div></div></footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAME SHOP | Premium Gaming Marketplace</title>
+  <meta name="description" content="GAME SHOP premium digital game marketplace" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><span class="brand-mark">G</span><span>GAME SHOP</span></a>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="index.html#deals">Deals</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-wrap">
+          <input type="search" id="main-search" placeholder="Search games" />
+          <button class="search-btn" aria-label="Search">⌕</button>
+        </div>
+        <a class="nav-link" href="seller-login.html">Seller</a>
+        <a class="nav-link" href="login.html">Login</a>
+        <a class="btn btn-primary btn-small" href="register.html">Sign Up</a>
+        <a class="cart-pill" href="cart.html">Cart <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">NEW RELEASES · PC · CONSOLE</span>
+          <h1>YOUR NEXT GAME STARTS HERE</h1>
+          <p>Discover blockbuster releases, limited-time offers, and premium digital experiences crafted for every gamer.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="catalog.html">Browse Games</a>
+            <a class="btn btn-secondary" href="#deals">View Deals</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>120K+</strong><span>Players</span></li>
+            <li><strong>2.4K</strong><span>Games</span></li>
+            <li><strong>24/7</strong><span>Support</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="featured-panel">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="Featured game" />
+            <div class="featured-info">
+              <span class="badge badge-hot">Hot Deal</span>
+              <h3>Cyberpunk 2077</h3>
+              <p>Now from $19.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-section section-spacing">
+      <div class="container">
+        <div class="section-header">
+          <div><span class="section-label">TOP PICKS</span><h2>Popular Games</h2></div>
+          <a href="catalog.html" class="text-link">Explore all</a>
+        </div>
+        <div class="game-grid" id="popular-games"></div>
+      </div>
+    </section>
+
+    <section class="category-section section-spacing neutral-bg">
+      <div class="container">
+        <div class="section-header"><div><span class="section-label">GENRES</span><h2>Browse by category</h2></div></div>
+        <div class="category-grid">
+          <div class="category-card">Action</div>
+          <div class="category-card">Adventure</div>
+          <div class="category-card">Racing</div>
+          <div class="category-card">Shooter</div>
+          <div class="category-card">RPG</div>
+          <div class="category-card">Survival</div>
+          <div class="category-card">Strategy</div>
+          <div class="category-card">Sports</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deals" class="section-spacing">
+      <div class="container">
+        <div class="section-header"><div><span class="section-label">SALES</span><h2>Special deals</h2></div></div>
+        <div class="deal-grid" id="deal-games"></div>
+      </div>
+    </section>
+
+    <section class="section-spacing neutral-bg">
+      <div class="container">
+        <div class="section-header"><div><span class="section-label">BESTSELLERS</span><h2>Top selling games</h2></div></div>
+        <div class="game-grid" id="bestseller-games"></div>
+      </div>
+    </section>
+
+    <section class="section-spacing">
+      <div class="container">
+        <div class="section-header"><div><span class="section-label">NEW ARRIVALS</span><h2>Recently added</h2></div></div>
+        <div class="game-grid" id="recent-games"></div>
+      </div>
+    </section>
+
+    <section class="advantages section-spacing neutral-bg">
+      <div class="container">
+        <div class="section-header center-header"><div><span class="section-label">WHY CHOOSE US</span><h2>Safe, simple and rewarding</h2></div></div>
+        <div class="feature-grid">
+          <div class="feature-card"><div class="feature-icon">⚡</div><h3>Fast checkout</h3><p>Instant digital delivery and secure payment experience.</p></div>
+          <div class="feature-card"><div class="feature-icon">🎮</div><h3>Huge catalog</h3><p>Access AAA titles, indie gems, and hot new releases.</p></div>
+          <div class="feature-card"><div class="feature-icon">🛡️</div><h3>Trusted platform</h3><p>Protected accounts, transparent pricing, and support.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter section-spacing">
+      <div class="container newsletter-box">
+        <div>
+          <span class="section-label">COMMUNITY</span>
+          <h2>Get weekly game drops & insider deals</h2>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand"><span class="brand-mark">G</span><span>GAME SHOP</span></a>
+        <p>Premium digital games and gaming lifestyle products.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact</a></li><li><a href="catalog.html">Catalog</a></li></ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul><li><a href="404.html">Help center</a></li><li><a href="login.html">Account</a></li><li><a href="seller-login.html">Seller panel</a></li></ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul><li><a href="404.html">Privacy</a></li><li><a href="404.html">Terms</a></li><li><a href="404.html">Security</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© <span id="year"></span> GAME SHOP. All rights reserved.</span></div></div>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

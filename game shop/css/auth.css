@@ -1,0 +1,5 @@
+.auth-page { background: radial-gradient(circle at top, rgba(79,124,255,0.1), transparent 30%), #0b0f18; }
+.auth-card { padding: 30px; }
+.auth-switch a { color: var(--primary); }
+.password-wrap { overflow: hidden; }
+.field-group textarea { resize: vertical; }

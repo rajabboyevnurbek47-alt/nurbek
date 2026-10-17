@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seller Dashboard | GAME SHOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/seller.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body class="seller-layout">
+  <aside class="seller-sidebar">
+    <div class="brand-box"><a href="index.html" class="brand"><span class="brand-mark">G</span><span>GAME SHOP</span></a></div>
+    <nav>
+      <a href="seller-dashboard.html" class="active">Dashboard</a>
+      <a href="seller-products.html">Products</a>
+      <a href="seller-add-product.html">Add product</a>
+      <a href="seller-orders.html">Orders</a>
+      <a href="index.html">Exit</a>
+    </nav>
+  </aside>
+  <main class="seller-main">
+    <div class="seller-topbar"><h1>Seller dashboard</h1><button class="btn btn-primary btn-small" id="seller-logout">Logout</button></div>
+    <div class="stats-grid">
+      <div class="stat-card"><span>Total sales</span><strong>$48,240</strong></div>
+      <div class="stat-card"><span>Orders</span><strong>1,284</strong></div>
+      <div class="stat-card"><span>Products</span><strong>146</strong></div>
+      <div class="stat-card"><span>Conversion</span><strong>7.8%</strong></div>
+    </div>
+    <div class="panel-grid">
+      <div class="seller-panel">
+        <h3>Recent orders</h3>
+        <ul class="compact-list">
+          <li><span>Cyberpunk 2077</span><strong>$19.99</strong></li>
+          <li><span>Red Dead Redemption 2</span><strong>$29.99</strong></li>
+          <li><span>Forza Horizon 5</span><strong>$19.99</strong></li>
+        </ul>
+      </div>
+      <div class="seller-panel">
+        <h3>Audience insights</h3>
+        <div class="chart-bars"><span style="height: 65%"></span><span style="height: 82%"></span><span style="height: 48%"></span><span style="height: 90%"></span><span style="height: 78%"></span><span style="height: 96%"></span></div>
+      </div>
+    </div>
+  </main>
+  <script src="js/storage.js"></script>
+  <script src="js/seller.js"></script>
+</body>
+</html>

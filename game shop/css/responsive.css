@@ -1,0 +1,20 @@
+@media (max-width: 900px) {
+  .main-nav { display: none; }
+  .navbar { flex-wrap: wrap; }
+  .nav-actions { width: 100%; justify-content: space-between; }
+  .catalog-layout { grid-template-columns: 1fr; }
+  .filter-panel { position: static; }
+}
+@media (max-width: 720px) {
+  .hero-inner, .catalog-hero-inner, .checkout-wrap, .profile-grid, .cart-layout, .contact-layout, .two-col { grid-template-columns: 1fr; }
+  .game-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .deal-grid { grid-template-columns: 1fr; }
+  .feature-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .game-grid, .category-grid, .stats-grid { grid-template-columns: 1fr; }
+  .newsletter-form, .coupon-box, .cta-row { flex-direction: column; }
+  .nav-actions { flex-wrap: wrap; }
+  .search-wrap { width: 100%; }
+  .search-wrap input { width: 100%; }
+}

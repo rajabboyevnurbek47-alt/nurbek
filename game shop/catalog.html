@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalog | GAME SHOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand"><span class="brand-mark">G</span><span>GAME SHOP</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="catalog.html" class="active">Catalog</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-link" href="login.html">Login</a>
+        <a class="btn btn-primary btn-small" href="register.html">Register</a>
+        <a class="cart-pill" href="cart.html">Cart <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="catalog-hero">
+      <div class="container catalog-hero-inner">
+        <div><span class="section-label">DISCOVER</span><h1>Game catalog</h1></div>
+        <div class="catalog-search-box"><input id="catalog-search" type="search" placeholder="Search title, genre or platform" /></div>
+      </div>
+    </section>
+
+    <section class="container catalog-layout">
+      <aside class="filter-panel">
+        <h3>Filters</h3>
+        <div class="filter-group">
+          <label>Genre</label>
+          <select id="genre-filter">
+            <option value="all">All Genres</option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Racing">Racing</option>
+            <option value="Shooter">Shooter</option>
+            <option value="RPG">RPG</option>
+            <option value="Survival">Survival</option>
+            <option value="Strategy">Strategy</option>
+            <option value="Sports">Sports</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Platform</label>
+          <select id="platform-filter">
+            <option value="all">All Platforms</option>
+            <option value="PC">PC</option>
+            <option value="PlayStation 5">PlayStation 5</option>
+            <option value="Xbox Series X|S">Xbox Series X|S</option>
+            <option value="Nintendo Switch">Nintendo Switch</option>
+            <option value="Multi">Multi-platform</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Sort by</label>
+          <select id="sort-filter">
+            <option value="featured">Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Rating</option>
+            <option value="sale">On Sale</option>
+          </select>
+        </div>
+        <div class="filter-group checkbox-group">
+          <label><input type="checkbox" id="sale-only" /> Show discounts only</label>
+        </div>
+      </aside>
+
+      <div class="catalog-content">
+        <div class="catalog-toolbar">
+          <span id="results-count">0 games</span>
+          <button id="reset-filters" class="btn btn-secondary btn-small">Reset</button>
+        </div>
+        <div class="game-grid" id="catalog-grid"></div>
+        <div class="load-more-wrap"><button id="load-more" class="btn btn-primary">Load more</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a href="index.html" class="brand"><span class="brand-mark">G</span><span>GAME SHOP</span></a><p>Digital entertainment for every gamer.</p></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="404.html">Help</a></li><li><a href="login.html">Account</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© <span id="year"></span> GAME SHOP</span></div></div>
+  </footer>
+
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
